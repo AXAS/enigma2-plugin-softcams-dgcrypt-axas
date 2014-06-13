@@ -1,0 +1,10 @@
+[reader]
+label                         = dgcrypt0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 4ABF
+detect                        = cd
+mhz                           = 500
+deprecated                    = 1
+group                         = 1
+emmcache                      = 1,3,2

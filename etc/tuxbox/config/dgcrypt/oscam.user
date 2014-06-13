@@ -1,0 +1,14 @@
+[account]
+user                          = dvbapiau
+pwd                           = 
+group                         = 1,2,3,4
+uniq                          = 3
+au                            = 1
+betatunnel                    = 1833.FFFF:1702
+cccmaxhops                    = 15
+cccreshare                    = 15
+cccignorereshare              = 1
+
+
+
+								

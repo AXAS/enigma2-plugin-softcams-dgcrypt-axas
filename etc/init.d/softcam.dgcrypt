@@ -1,0 +1,29 @@
+#!/bin/sh
+
+case "$1" in
+start)
+	/usr/bin/./dgcrypt -b -c /etc/tuxbox/config/dgcrypt/
+	;;
+stop)
+	killall -9 dgcrypt 2>/dev/null
+	sleep 2
+	rm -rf /tmp/.dgcrypt
+	;;
+restart|reload)
+	$0 stop
+	sleep 1
+	$0 start
+	;;
+version)
+	echo "1.0"
+	;;
+info)
+	echo "dgcrypt"
+	;;
+*)
+	echo "Usage: $0 start|stop|restart"
+	exit 1
+	;;
+esac
+exit 0
+
